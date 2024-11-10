@@ -1,5 +1,5 @@
 # projeto-docker-go
-Container GoLang interagindo com container mysql
+Container API em GoLang interagindo com container mysql
 
 Linux - Ubuntu
 
