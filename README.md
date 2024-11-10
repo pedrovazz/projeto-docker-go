@@ -37,17 +37,21 @@ desenvolver uma API com POST, GET, PUT e DELETE (crud), no ambiente local ( linu
     -Aplicação criada
 
 buildar a aplicação
+    
     go build -o api-go  main.go| no VScode
 
 Criar um novo container para rodar a aplicação buildada.
+    
     cd /home/pedro/dev/go-api | vai até o diretório da aplicação buildada | No terminal
     docker build -t api -f /home/pedro/dev/go-api/Dockerfile .| builda a imagem baseada no dockerfile
     docker run --name dockerapi -it api | cria o container e roda
 
 Conseguir fazer o container do passo 8 enxergar o binário buildado do passo 7. Dica, você pode copiar o binário no momento da criação do container ou fazer um volume compartilhado entre container e host para fazer copy/paste do arquivo da aplicação.
+    
     -Feito copiando o binario, configurando o dockerfile.
 
 Com os dois containers  rodando (app e bd) acessar a API exposta e usar ela, confirmando que a alteração no banco está ocorrendo tbm.
+    
     docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' dockerapi | Pegar IP do container dockerapi 
     docker start dockerapi | para iniciar novamente o container
     docker exec -it dockerapi /bin/sh | para abrir o terminal do container
