@@ -7,7 +7,7 @@ Baixar uma distro linux (conselho para quem começa, ubuntu, é uma distro basea
 
 Instalar o chrome, vscode, linguagem de melhor afinidade (.net, java, go, python, etc...), insominia/postman e o docker.
     https://askubuntu.com/questions/935569/how-to-completely-uninstall-docker
-    https://www.youtube.com/watch?v=7Iw2OgmwJG0&list=PLyGI7X8uCfHBBKlqRiS8m23XRH8xYE8Il
+    https://www.youtube.com/watch?v=7Iw2OgmwJG0&list=PLyGI7X8uCfHBBKlqRiS8m23XRH8xYE8Il | VIDEOS ANDRE NASSERALA
     
     apt install mysql
     apt install docker-ce docker-ce-cli container.io
